@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MyFirstController {
 
-    @GetMapping("/hello")
+    @GetMapping("Get/hello")
     public String returnHelloMessage(){
         return "Hello World;";
     }
 
-    @GetMapping("/hello/{name}")
+    @GetMapping("/Get/hello/{name}")
     public String greetPerson(@PathVariable String name) {
         return "Hello, " + name;
     }
